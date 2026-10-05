@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Galaxy S22 Ultra</title>
+<meta name="description" content="Samsung Galaxy S22 Ultra 5G: 6.8-inch QHD+ 120 Hz display, built-in S Pen, 10x optical zoom, 5,000 mAh battery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--h:262;--ink:#f3ecdf;--soft:rgba(243,236,223,.66);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font-family:"Jost",system-ui,sans-serif;font-weight:300;overflow-x:hidden;
+ background:radial-gradient(70% 55% at 50% 52%,hsl(var(--h) 28% 22%),hsl(var(--h) 30% 7%) 80%) fixed #100d16}
+#scroll{height:1100vh}
+@supports(height:1svh){#scroll{height:1100svh}}
+canvas{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:pan-y;cursor:grab;-webkit-user-select:none;user-select:none}
+.t{position:fixed;max-width:min(26ch,38vw);opacity:0;pointer-events:none;will-change:opacity,transform,filter}
+.t h2{font:italic 300 clamp(1.7rem,3.4vw,3.2rem)/1.08 "Cormorant Garamond",Georgia,serif;margin:0 0 .6em;letter-spacing:.01em}
+.t p{font-size:clamp(.82rem,1vw,.95rem);line-height:1.7;color:var(--soft);margin:0;letter-spacing:.04em;max-width:30ch}
+.hero{left:50%;top:50%;transform:translate(-50%,-50%);max-width:none;text-align:center;z-index:-1}
+.hero h1{font:italic 300 clamp(4.5rem,17vw,16rem)/.9 "Cormorant Garamond",Georgia,serif;margin:0;letter-spacing:.02em;color:rgba(243,236,223,.14)}
+.L{left:6vw}.R{right:6vw;text-align:right}.R p{margin-left:auto}
+.u{top:15vh}.m{top:42vh}.d{bottom:13vh}
+.fin{left:50%;bottom:9vh;transform:translateX(-50%);text-align:center;max-width:none}
+.fin h2{font-size:clamp(2.2rem,5vw,4.6rem)}
+.fin p{margin-inline:auto}
+.hint{left:50%;bottom:3.2vh;max-width:none;text-align:center}.hint p{font-size:.78rem;letter-spacing:.18em;margin:0}
+#load{position:fixed;inset:0;display:grid;place-items:center;padding:0 8vw;text-align:center;font:italic 300 1.6rem "Cormorant Garamond",Georgia,serif;color:var(--soft);transition:opacity .9s;pointer-events:none}
+#load.x{opacity:0}
+
+/* portrait phones and tablets: all copy sits under the phone */
+@media(max-aspect-ratio:9/10),(max-width:760px){
+ .t{top:auto!important;bottom:8vh!important;left:7vw!important;right:7vw!important;max-width:none;text-align:left!important}
+ .t h2{font-size:clamp(1.45rem,6.2vw,2.1rem)}.t p{max-width:34ch;margin-left:0!important}
+ .hero{left:50%!important;right:auto!important;top:30%!important;bottom:auto!important;text-align:center!important}
+ .fin,.hint{left:50%!important;right:auto!important;width:86vw;text-align:center!important}
+ .fin p{margin-inline:auto!important}.fin{bottom:7vh!important}.hint{bottom:2.4vh!important}
+}
+@media(min-width:600px) and (max-aspect-ratio:9/10){.t h2{font-size:clamp(1.8rem,4.4vw,2.8rem)}.t p{font-size:clamp(.9rem,2vw,1.05rem)}}
+/* squarish screens (small laptops, tablets in landscape, split windows): keep the columns narrow so the phone stays clear */
+@media(min-aspect-ratio:9/10) and (max-aspect-ratio:13/10) and (min-width:761px){.t{max-width:min(24ch,24vw)}.t h2{font-size:clamp(1.4rem,3vw,2.4rem)}}
+/* landscape phones */
+@media(max-height:520px) and (min-aspect-ratio:13/10){
+ .t h2{font-size:clamp(1.05rem,3.4vw,1.6rem);margin-bottom:.4em}.t p{font-size:.72rem;line-height:1.5}
+ .hero h1{font-size:clamp(3rem,26vh,9rem)}.u{top:9vh}.m{top:38vh}.d{bottom:10vh}.fin{bottom:6vh}.hint{display:none}
+}
+@media(max-width:380px){.t h2{font-size:1.35rem}.t p{font-size:.78rem;line-height:1.55}}
+@media(min-width:1800px){.t{max-width:min(30ch,30vw)}.t p{font-size:1.05rem}}
+</style>
+</head>
+<body>
+<div id="scroll"></div>
+<div id="load">loading…</div>
+<!-- 3D model: "Samsung Galaxy S22 Ultra" by DatSketch, CC BY-NC 4.0, https://sketchfab.com/3d-models/samsung-galaxy-s22-ultra-a95eec5181a24bcd8a8452df50b29f3a -->
+
+<div class="t hero" data-a="0" data-b=".1"><h1>Ultra</h1></div>
+<div class="t L u" data-a="0" data-b=".09"><h2>Galaxy S22 Ultra 5G</h2><p>The Galaxy S Ultra camera system with the S Pen of the Note series. 163.3&nbsp;×&nbsp;77.9&nbsp;×&nbsp;8.9&nbsp;mm, about 228&nbsp;g.</p></div>
+<div class="t L u" data-a=".08" data-b=".2"><h2>6.8 inches, QHD+ at 120&nbsp;Hz.</h2><p>Dynamic AMOLED 2X, 3088&nbsp;×&nbsp;1440, adaptive refresh, HDR10+ and up to 1,750&nbsp;nits. Curved edges under Gorilla Glass Victus+.</p></div>
+<div class="t R d" data-a=".18" data-b=".3"><h2>Four cameras, up to 100× zoom.</h2><p>108MP main with OIS and laser autofocus, 12MP ultra-wide, 10MP at 3× and 10MP at 10× optical. Video up to 8K at 24&nbsp;fps.</p></div>
+<div class="t L m" data-a=".31" data-b=".43"><h2>The S Pen is built in.</h2><p>About 2.8&nbsp;ms latency, Samsung Notes, Screen-Off Memo and Air Actions over Bluetooth.</p></div>
+<div class="t R u" data-a=".42" data-b=".52"><h2>Glass, aluminum, glass.</h2><p>Gorilla Glass Victus+ on both sides of an Armor Aluminum frame. IP68 water and dust resistance.</p></div>
+<div class="t L m" data-a=".5" data-b=".6"><h2>Quick to the touch.</h2><p>Up to 240&nbsp;Hz touch sampling in Game Mode, an Always-On display and an ultrasonic fingerprint scanner under the glass.</p></div>
+<div class="t R d" data-a=".58" data-b=".68"><h2>Lenses, set in a row.</h2><p>f/1.8 main, 120° ultra-wide, a 3× telephoto at f/2.4 and a 10× periscope at f/4.9. Front camera is 40MP.</p></div>
+<div class="t L u" data-a=".66" data-b=".76"><h2>The pen comes apart too.</h2><p>Tip, body, button and caps. Smart Select, Translate, Screenshot Writing and a remote camera shutter.</p></div>
+<div class="t R m" data-a=".74" data-b=".82"><h2>Snapdragon 8 Gen 1, or Exynos 2200.</h2><p>Both 4&nbsp;nm and octa-core, with 8 or 12GB of RAM and storage from 128GB to 1TB.</p></div>
+<div class="t L d" data-a=".8" data-b=".88"><h2>5,000&nbsp;mAh.</h2><p>45W wired and 15W wireless charging. Wireless PowerShare charges other devices from the back.</p></div>
+<div class="t R u" data-a=".86" data-b=".94"><h2>Connected, and desktop-ready.</h2><p>5G, Wi-Fi 6E, Bluetooth 5.2, UWB and USB-C 3.2. Samsung DeX runs a desktop interface on a monitor or TV.</p></div>
+<div class="t hint" data-a=".4" data-b=".95"><p>drag or swipe to turn it</p></div>
+<div class="t fin" data-a=".93" data-b="1.02"><h2>Every part, in its place.</h2><p>Released February&nbsp;25, 2022. In Phantom Black, Phantom White, Green, Burgundy, Graphite, Sky Blue and Red.</p></div>
+
+<script src="assets/s22_ultra_b64.js"></script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+
+const GLB='assets/samsung_galaxy_s22_ultra.glb';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const V=(x,y,z)=>new THREE.Vector3(x,y,z), clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+const s3=(a,b,x)=>{x=clamp((x-a)/(b-a),0,1);return x*x*(3-2*x)};                    // smoothstep, for text fades
+const sm=x=>{x=clamp(x,0,1);return x*x*x*(x*(x*6-15)+10)};                           // smootherstep, for all motion: zero speed and zero acceleration at both ends
+
+const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;
+const cv=renderer.domElement;cv.setAttribute('aria-label','Interactive 3D Samsung Galaxy S22 Ultra with S Pen. Drag to rotate.');document.body.prepend(cv);
+const scene=new THREE.Scene();
+scene.environment=new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(),.04).texture;
+const key=new THREE.DirectionalLight(0xffeedd,1.5);key.position.set(3,4,5);scene.add(key);
+const rim=new THREE.DirectionalLight(0xb9a8ff,1.4);rim.position.set(-5,2,-3);scene.add(rim);
+const fill=new THREE.DirectionalLight(0xffffff,.5);fill.position.set(-2,-3,4);scene.add(fill);
+const cam=new THREE.PerspectiveCamera(30,1,.1,400);
+const tanV=Math.tan(THREE.MathUtils.degToRad(15));
+
+/* ---- how far each piece travels when the phone comes apart: [x, y, z] in model units, world axes (x right, y up, z toward the viewer).
+   The model is 5.27 tall, so 1 unit is about 31 mm. Pieces further from the middle travel further and leave first, so layers never pass through each other. */
+const OFF={
+ Display_ActiveArea:[0,0,.95],Bezel:[0,0,.7],SpeakerMic:[0,0,.3],Rearcase_hole:[0,0,.18],
+ Rearcase:[0,0,0],Antenna_Plastic:[0,0,-.12],Black_hole:[0,0,-.26],
+ Back_Cover_Glass:[0,0,-.58],BackCover_Glass_hole:[0,0,-.66],SAMSUNG_LOGO:[0,0,-.74],
+ BackCamDeco:[0,0,-.86],Cam_Bezel:[0,0,-.96],Cam_Body:[0,0,-.95],Cam_lens:[0,0,-1.08],Cam_Glass:[0,0,-1.22],Zoom_Cam:[0,0,-1.08],
+ Flash:[0,0,-.8],Flash_Glass:[0,0,-.9],Gray:[0,0,-.78],Sensor:[0,0,-.78],material:[0,0,-.78],
+ Usb_1:[0,-.7,0],Usb_2:[0,-1,0],
+ Pen_Ball:[0,.55,0],Pen_Body:[0,0,0],Pen_Button:[0,0,.5],Pen_Top:[0,-.55,0],Pen_Cap:[0,-1.05,0]};
+// the file has no dark-glass shading worth the name, so a few materials are tuned: black parts get a little colour so they catch light
+const MAT={
+ Rearcase:m=>{m.color.set(0x2a2c33);m.metalness=.85;m.roughness=.3},
+ Back_Cover_Glass:m=>{m.color.set(0x0f1116);m.roughness=.18},
+ Antenna_Plastic:m=>m.color.set(0x1b1c21),
+ Cam_Body:m=>m.color.set(0x1a1b20),
+ Pen_Body:m=>{m.color.set(0x17181c);m.roughness=.4},
+ Pen_Top:m=>{m.color.set(0x24262c);m.metalness=.6;m.roughness=.3},
+ Pen_Button:m=>m.color.set(0x2a2c32),
+ Display_ActiveArea:m=>{m.emissiveMap=m.map;m.emissive.set(0xffffff);m.emissiveIntensity=.85;m.color.set(0x303030);m.metalness=0;m.roughness=.12}};
+
+const root=new THREE.Group(),inner=new THREE.Group();root.add(inner);scene.add(root);root.rotation.order='YXZ';
+let parts=[],M={},ready=false;
+
+/* ---- internal components. The file only has the outside, so the inside is built from primitives, in world axes (x right, y up from the bottom edge, z toward the viewer) */
+const rnd=(()=>{let n=7;return()=>(n=(n*16807)%2147483647)/2147483647})();
+const cTex=(w,h,fn)=>{const c=document.createElement('canvas');c.width=w;c.height=h;fn(c.getContext('2d'),w,h);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=8;return t};
+function internals(){
+ const pcbTex=cTex(512,512,(g,w,h)=>{g.fillStyle='#0d4636';g.fillRect(0,0,w,h);g.strokeStyle='rgba(212,170,80,.75)';g.lineWidth=2;
+  for(let i=0;i<70;i++){let x=rnd()*w,y=rnd()*h;g.beginPath();g.moveTo(x,y);for(let k=0;k<4;k++){if(k%2)y+=(rnd()-.5)*140;else x+=(rnd()-.5)*140;g.lineTo(x,y)}g.stroke()}
+  g.fillStyle='#d9b45a';for(let i=0;i<160;i++){g.beginPath();g.arc(rnd()*w,rnd()*h,2+rnd()*3,0,7);g.fill()}});
+ const chipTex=cTex(256,256,(g,w,h)=>{const gr=g.createLinearGradient(0,0,w,h);gr.addColorStop(0,'#3a3b42');gr.addColorStop(1,'#16171b');g.fillStyle=gr;g.fillRect(0,0,w,h);
+  g.strokeStyle='#8f9099';g.lineWidth=4;g.strokeRect(14,14,w-28,h-28);g.fillStyle='#d8d8de';g.textAlign='center';g.font='italic 300 110px Georgia,serif';g.fillText('4nm',w/2,h/2+30);g.font='300 20px sans-serif';g.fillText('OCTA-CORE',w/2,h-46)});
+ const batTex=cTex(512,256,(g,w,h)=>{g.fillStyle='#b9bcc4';g.fillRect(0,0,w,h);g.fillStyle='#2b2d33';g.fillRect(24,24,w-48,64);g.fillStyle='#e9e9ee';g.font='300 34px sans-serif';g.fillText('5,000 mAh',40,68);g.fillStyle='#8a8d96';for(let i=0;i<6;i++)g.fillRect(24,110+i*22,w-48,2)});
+ const mt=(c,r,m)=>new THREE.MeshStandardMaterial({color:c,roughness:r,metalness:m,envMapIntensity:1.4});
+ const sil=mt(0xc9ccd4,.28,.9),dark=mt(0x16171b,.5,.3),gold=mt(0xd4af37,.3,.9),copper=mt(0xb87333,.3,.9),amber=mt(0xd98a1e,.5,.1),glass=mt(0x0a0d1a,.05,.2);
+ const face=(side,top,bottom)=>[side,side,side,side,top,bottom||side];
+ const pcbM=face(mt(0x0d4636,.6,.1),new THREE.MeshStandardMaterial({map:pcbTex,roughness:.5,metalness:.15}),mt(0x0a2e24,.7,.1));
+ const chipM=face(dark,new THREE.MeshStandardMaterial({map:chipTex,roughness:.35,metalness:.6}));
+ const batM=face(mt(0x2b2d33,.6,.2),new THREE.MeshStandardMaterial({map:batTex,roughness:.4,metalness:.7}),sil);
+ const g=new THREE.Group();inner.add(g);
+ const add=(o,x,y,z,dz)=>{o.position.set(x,y,z);g.add(o);parts.push({o,base:o.position.clone(),off:V(0,0,dz),len:Math.abs(dz),inner:1});o.visible=false;return o};
+ const box=(w,h,d,m)=>new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m);
+ const cz=(r,l,n,m)=>{const q=new THREE.CylinderGeometry(r,r,l,n);q.rotateX(Math.PI/2);return new THREE.Mesh(q,m)};
+ // behind the middle frame: wireless coil and the 5,000 mAh cell
+ const coil=new THREE.Group();[.5,.58,.66].forEach(r=>coil.add(new THREE.Mesh(new THREE.TorusGeometry(r,.012,8,96),copper)));add(coil,-.28,1.95,-.075,-.36);
+ add(box(1.45,2.45,.075,batM),-.28,1.85,-.02,-.22);
+ // in front of it: flex cable, charging-port board, main board, chips
+ add(box(.1,2.4,.008,amber),.72,1.9,-.05,.46);
+ add(box(1.4,.45,.018,pcbM),-.05,.4,-.05,.5);
+ add(box(1.75,1.7,.02,pcbM),.15,4.2,-.05,.5);
+ add(box(.36,.36,.03,chipM),.38,4.12,-.025,.62);                    // processor
+ add(box(.3,.24,.025,dark),-.15,4.25,-.027,.62);                    // memory
+ add(box(.5,.28,.03,sil),.3,4.62,-.025,.62);                        // modem shield
+ add(box(.22,.2,.025,dark),-.5,3.75,-.027,.62);                     // power chip
+ add(box(.34,.18,.03,sil),.75,3.62,-.025,.62);                      // radio shield
+ for(const x of[-.62,.92])for(const y of[3.45,4.95])add(cz(.025,.02,12,gold),x,y,-.035,.62);
+ const fc=new THREE.Group();fc.add(cz(.06,.04,24,sil));fc.add(cz(.035,.05,20,glass));add(fc,0,5.0,.03,.62); // front camera
+}
+
+function pose(e){
+ for(const q of parts){const d=Math.min(1,q.len/1.3),s=.3*(1-d),k=e<=0?0:sm((e-s)/(1-s)); // the pieces that travel furthest start first
+  q.o.position.copy(q.base).addScaledVector(q.off,k);if(q.inner)q.o.visible=e>.001}
+}
+function measure(e){pose(e);inner.position.set(0,0,0);root.updateMatrixWorld(true);const b=new THREE.Box3();
+ inner.traverse(o=>{if(o.isMesh)b.expandByObject(o)});return{c:b.getCenter(V(0,0,0)),h:b.getSize(V(0,0,0)).multiplyScalar(.5)}}
+
+function setup(gltf){
+ const model=gltf.scene;inner.add(model);
+ model.traverse(o=>{
+  if(!o.isMesh)return;
+  const m=o.material.clone(),nm=m.name;m.envMapIntensity=1.5;if(m.transparent)m.depthWrite=false;(MAT[nm]||(()=>{}))(m);o.material=m;
+  o.geometry.computeBoundingBox();const cx=o.geometry.boundingBox.getCenter(V(0,0,0)).x;
+  const k=nm==='Rearcase'&&cx>1.3?'Pen_Cap':nm,w=OFF[k]||[0,0,0];            // the pen end cap shares the frame's material
+  // the model's own axes: x width, y thickness (back is +y), z height. The scene is rotated into x right, y up, z toward the viewer, so a world offset (x,y,z) is (x,-z,y) here
+  parts.push({o,base:o.position.clone(),off:V(w[0],-w[2],w[1]),len:Math.hypot(w[0],w[1],w[2])});
+ });
+ internals();
+ M.ex=[];for(let i=0;i<=16;i++){const m=measure(i/16);m.h.y+=.04*sm(i/16);M.ex.push(m)}   // boxes sampled across the split, used for framing
+ pose(0);ready=true;
+ document.getElementById('load').classList.add('x');
+}
+
+/* ---- turn the standing phone with mouse or touch: it rotates around its own vertical axis only */
+let uy=0,vy=0,drag=false,lx=0;
+cv.addEventListener('pointerdown',e=>{drag=true;lx=e.clientX;vy=0;cv.setPointerCapture(e.pointerId);cv.style.cursor='grabbing'});
+cv.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-lx;lx=e.clientX;vy=dx*.009;uy+=vy});
+const end=()=>{drag=false;cv.style.cursor='grab'};
+cv.addEventListener('pointerup',end);cv.addEventListener('pointercancel',end);
+addEventListener('keydown',e=>{if(e.key==='ArrowLeft')vy-=.05;if(e.key==='ArrowRight')vy+=.05});
+
+/* ---- scroll */
+const texts=[...document.querySelectorAll('.t')];
+let target=0,p=0,dCur=0,last=0;
+const onScroll=()=>{const m=document.documentElement.scrollHeight-innerHeight;target=m>0?scrollY/m:0};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+function resize(){renderer.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
+addEventListener('resize',resize);addEventListener('orientationchange',resize);resize();
+
+const R=new THREE.Matrix4(),mix=(a,b,t)=>a.clone().lerp(b,t);
+const tbl=e=>{const x=e*16,i=Math.min(15,Math.floor(x)),u=x-i,a=M.ex[i],b=M.ex[i+1];return{c:mix(a.c,b.c,u),h:mix(a.h,b.h,u)}};
+function frame(){
+ const tn=performance.now(),dt=Math.min(.05,last?(tn-last)/1000:.016);last=tn;
+ p+=(target-p)*(reduce?1:1-Math.exp(-dt*7));
+ if(ready){
+  const e=clamp((p-.44)/.32,0,1);                                   // 0 whole .. 1 fully apart
+  pose(e);
+  const B=tbl(e);inner.position.copy(B.c).negate();
+  // scripted turn: front, then round to the back for the cameras, then front again before it comes apart; a fixed three-quarter view while split so the layers read
+  const turn=Math.PI*(sm((p-.12)/.13)-sm((p-.31)/.12));
+  if(!drag){uy+=vy;vy*=.94}
+  root.rotation.set(0,turn-.6*sm(e)+uy,0);
+  // framing: size of the current box as seen from the camera, so the phone always fits and fills the screen
+  R.makeRotationFromEuler(root.rotation);const r=R.elements,h=B.h;
+  const ex=Math.abs(r[0])*h.x+Math.abs(r[4])*h.y+Math.abs(r[8])*h.z, ey=Math.abs(r[1])*h.x+Math.abs(r[5])*h.y+Math.abs(r[9])*h.z, ez=Math.abs(r[2])*h.x+Math.abs(r[6])*h.y+Math.abs(r[10])*h.z;
+  const asp=cam.aspect,tanH=tanV*asp,tall=asp<.9,short=asp>1.3&&innerHeight<520;
+  const fW=tall?.94:asp<1.3?.46:.42, fH=tall?.56:short?.66:.8;
+  const want=Math.max(ex/(fW*tanH),ey/(fH*tanV))+ez;
+  dCur+=(want-dCur)*(dCur?1-Math.exp(-dt*9):1);cam.position.set(0,0,dCur);
+  root.position.y=tall?.26*dCur*tanV:0;                              // on portrait screens the phone sits in the upper part; the copy lives below it
+ }
+ for(const el of texts){const a=+el.dataset.a,b=+el.dataset.b,u=(p-a)/(b-a);
+  const k=(a<=0?1:s3(0,.22,u))*(1-s3(.78,1,u)); /* the first blocks are already in place when the page opens */const cl=el.classList;const base=cl.contains('hero')?'translate(-50%,-50%)':(cl.contains('fin')||cl.contains('hint'))?'translateX(-50%)':'';
+  el.style.opacity=k;el.style.transform=`${base} translateY(${(1-k)*26}px)`;
+  el.style.filter=k<.99?`blur(${(1-k)*7}px)`:'none';el.style.letterSpacing=`${(1-k)*.12}em`}
+ document.body.style.setProperty('--h',Math.round(262+(p<.5?p*2*52:104-(p-.5)*2*70)));
+ renderer.render(scene,cam);requestAnimationFrame(frame)}
+
+const fail=e=>{document.getElementById('load').textContent='Could not load the 3D model. Check your connection and reload.';console.error(e)};
+try{
+ if(window.GLB_B64){const bin=atob(window.GLB_B64),u=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);new GLTFLoader().parse(u.buffer,'',g=>{try{setup(g)}catch(e){fail(e)}},fail)}
+ else new GLTFLoader().load(GLB,g=>{try{setup(g)}catch(e){fail(e)}},undefined,fail);
+}catch(e){fail(e)}
+frame();
+</script>
+</body>
+</html>
