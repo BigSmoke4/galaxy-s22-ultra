@@ -1,0 +1,1 @@
+# galaxy-s22-ultra
